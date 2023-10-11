@@ -76,7 +76,7 @@ nav ul li:hover{
 }
 
 header{
-    background-image:radial-gradient(#fff, #c7c7c7);
+    background-image:radial-gradient(#e6e4e4, #c6c2c2);
 }
 
 
@@ -102,7 +102,7 @@ header{
     margin-bottom: 1.5rem;
 }
 .header-bottom-side-left button{
-    background-color:#0084ff;
+    background-color:rgb(209, 79, 32);
     border: none;
     cursor: pointer;
     padding: 0.8rem 3.8rem;
@@ -230,7 +230,7 @@ main{
 .subtitle-underline{
     width: 100px;
     height: 5px;
-    background: #0084ff;
+    background: rgb(209, 79, 32);
     border-radius: 9999px;
     margin: 8px auto 0 auto;
 }
@@ -248,7 +248,7 @@ main{
 }
 
 .rate{
-    color:#0084ff;
+    color:rgb(209, 79, 32);
     font-size: 1.3rem;
 }
 
@@ -257,3 +257,103 @@ main{
 }
 
 
+.exclusive-container{
+    color: white;
+    flex-direction: row-reverse;
+    padding: 5rem 1rem;
+}
+
+.exclusive-container img{
+    max-width:500px;
+}
+
+
+/*Media queries */
+@media (max-width: 800px){
+    .section-title{
+        font-size: 1rem;
+    }
+
+    .col-3{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .col-4{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .product-name, .product-price, .rate{
+        max-height: 1rem;
+        overflow:hidden;
+        font-size: 0.8 rem;
+    }
+
+    .exclusive-container{
+        flex-direction: column-reverse;
+    }
+    .exclusive-container img{
+        margin-bottom: 4rem;
+    }
+
+}
+
+
+
+/* Main content*/
+
+
+
+
+/* pai */
+
+.pai{
+    display: flex;
+    padding: 4rem 1rem;
+    justify-content: space-evenly;
+}
+
+ .filho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 30%;
+    text-align: center;
+    box-shadow: 0 0 15px #afafaf;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+ }
+
+ .filho:hover{
+    transform: translateY(-5px);
+ }
+
+ .filho p{
+    margin: 5px 0;
+}
+
+.filho p:first-child{
+    font-weight: bold;
+    font-size: 5rem;
+    color: rgb(199, 77, 33);
+    margin-top: 3rem;
+    line-height: 2rem;
+}
+
+.filho p:last-child{
+    font-weight: bold;
+}
+
+
+
+
+ /* Media queries */
+ @media (max-width: 800px){
+    .pai{
+        flex-direction: column;
+    }
+    .filho{
+        margin-bottom: 1.2rem;
+    }
+ }
